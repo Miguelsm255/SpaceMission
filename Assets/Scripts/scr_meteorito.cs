@@ -18,8 +18,17 @@ public class scr_meteorito : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
-        transform.Translate(0,1 * velocidad * Time.deltaTime ,0);
+    {
+        if (gameObject.GetComponent<Animator>().GetBool("golpeado") == false)
+        {
+            transform.Translate(0,1 * velocidad * Time.deltaTime ,0);
+        }
+
+        if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "vacio")
+        {
+            Destroy(gameObject);
+            Debug.Log("Hola");
+        }
     }
 
 //--------------------------------------------------------------------------------------------------------------
@@ -28,7 +37,7 @@ public class scr_meteorito : MonoBehaviour
     {
         if (collision.gameObject.name == "bala(Clone)")
         {
-            Destroy(gameObject);
+            gameObject.GetComponent<Animator>().SetBool("golpeado",true);
         }
     }
 }
