@@ -27,15 +27,14 @@ public class scr_meteorito : MonoBehaviour
         if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "vacio")
         {
             Destroy(gameObject);
-            Debug.Log("Hola");
         }
     }
 
 //--------------------------------------------------------------------------------------------------------------
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.gameObject.name == "bala(Clone)")
+        if (col.gameObject.name == "bala(Clone)" || col.gameObject.name =="nave")
         {
             gameObject.GetComponent<Animator>().SetBool("golpeado",true);
         }

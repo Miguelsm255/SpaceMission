@@ -23,9 +23,9 @@ public class scr_bala : MonoBehaviour
 
 //----------------------------------------------------------------------------------------------
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.gameObject.name == "meteorito(Clone)")
+        if (col.gameObject.name == "meteorito(Clone)")
         {
             Destroy(gameObject);           
         }

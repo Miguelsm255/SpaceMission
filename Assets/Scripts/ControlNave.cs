@@ -43,4 +43,12 @@ public class ControlNave : MonoBehaviour
             disparar = 1;
         }
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.name == "meteorito(Clone)")
+        {
+            Destroy(gameObject);           
+        }
+    }
 }
