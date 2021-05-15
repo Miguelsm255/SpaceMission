@@ -292,6 +292,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 511341217559653845, guid: 3b718e6d991cf7a7fa06a7afa555aee4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1444731697878451303, guid: 40a58a138a7ae528696ac9cad89545de, type: 3}
+    - target: {fileID: 511341217559653845, guid: 3b718e6d991cf7a7fa06a7afa555aee4, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 860773421735435109, guid: 3b718e6d991cf7a7fa06a7afa555aee4, type: 3}
       propertyPath: m_Name
       value: meteorito
@@ -468,7 +476,7 @@ GameObject:
   - component: {fileID: 1231062660}
   - component: {fileID: 1231062659}
   m_Layer: 0
-  m_Name: meteoritoSpawner
+  m_Name: scripter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -488,6 +496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 1
   meteorito: {fileID: 860773421735435109, guid: 3b718e6d991cf7a7fa06a7afa555aee4, type: 3}
+  esperaPrincipio: 1
 --- !u!4 &1231062660
 Transform:
   m_ObjectHideFlags: 0

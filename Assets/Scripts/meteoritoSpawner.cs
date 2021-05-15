@@ -6,13 +6,14 @@ public class meteoritoSpawner : MonoBehaviour
 {
     public float timer = 3;
     public GameObject meteorito;
+    public float esperaPrincipio = 5;
 
 //-------------------------------------------------------------------------------------------------
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        timer += esperaPrincipio;
     }
 
 //------------------------------------------------------------------------------------------------
@@ -20,7 +21,8 @@ public class meteoritoSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       timer -= Time.deltaTime;
+        
+        timer -= Time.deltaTime;
 
         if (timer < 0)
         {
@@ -28,6 +30,6 @@ public class meteoritoSpawner : MonoBehaviour
             Quaternion rotacion = new Quaternion();
             float x = Random.Range(-2.0f , 2.0f);
             Instantiate(meteorito , new Vector3(x , 6f , 0f) , rotacion);
-        }        
+        }
     }
 }
