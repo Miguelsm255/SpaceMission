@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 2052454693191660501, guid: f6c79fb1b1c3699c8aa6c5ab4aa81903, type: 3}
   puntos: 0
+  gameover: {fileID: 0}
 --- !u!95 &2608881139268821718
 Animator:
   serializedVersion: 3
