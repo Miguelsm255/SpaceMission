@@ -36,6 +36,7 @@ public class scr_meteorito : MonoBehaviour
     {
         if (col.gameObject.name == "bala(Clone)" || col.gameObject.name =="nave")
         {
+            GameObject.Find("nave").GetComponent<scr_nave>().puntos += 1;
             gameObject.GetComponent<Animator>().SetBool("golpeado",true);
         }
     }

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class scr_bala : MonoBehaviour
 {
     float velocidad = 10;
+
 //---------------------------------------------------------------------------------------------
 
     // Start is called before the first frame update
@@ -27,7 +29,7 @@ public class scr_bala : MonoBehaviour
     {
         if (col.gameObject.name == "meteorito(Clone)")
         {
-            Destroy(gameObject);           
+            Destroy(gameObject);
         }
     }
 }
