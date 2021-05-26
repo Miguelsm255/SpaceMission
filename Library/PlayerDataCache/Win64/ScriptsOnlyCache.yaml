@@ -11,10 +11,13 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -45,7 +48,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Game.unity:
+    Assets/Scenes/Ajustes.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -58,7 +61,54 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1790}
+    - Class: 114
+      Script: {instanceID: 2108}
+    - Class: 114
+      Script: {instanceID: 2478}
+    - Class: 114
+      Script: {instanceID: 2626}
+    - Class: 114
+      Script: {instanceID: 2796}
+    - Class: 114
+      Script: {instanceID: 3006}
+    - Class: 114
+      Script: {instanceID: 4508}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Game.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
@@ -77,39 +127,31 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1512}
+      Script: {instanceID: 1514}
     - Class: 114
-      Script: {instanceID: 1782}
+      Script: {instanceID: 1790}
     - Class: 114
-      Script: {instanceID: 1788}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2098}
+      Script: {instanceID: 2478}
     - Class: 114
-      Script: {instanceID: 2106}
+      Script: {instanceID: 2626}
     - Class: 114
-      Script: {instanceID: 2476}
+      Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 3006}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 3004}
+      Script: {instanceID: 3138}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3466}
     - Class: 114
-      Script: {instanceID: 3136}
+      Script: {instanceID: 4100}
     - Class: 114
-      Script: {instanceID: 3464}
+      Script: {instanceID: 4302}
     - Class: 114
-      Script: {instanceID: 4098}
-    - Class: 114
-      Script: {instanceID: 4254}
-    - Class: 114
-      Script: {instanceID: 4300}
-    - Class: 114
-      Script: {instanceID: 4506}
-    - Class: 114
-      Script: {instanceID: 4586}
+      Script: {instanceID: 4508}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -141,6 +183,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
     - Class: 58
@@ -158,29 +202,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1512}
+      Script: {instanceID: 1514}
     - Class: 114
-      Script: {instanceID: 1788}
+      Script: {instanceID: 1784}
     - Class: 114
-      Script: {instanceID: 2106}
+      Script: {instanceID: 1790}
     - Class: 114
-      Script: {instanceID: 2476}
+      Script: {instanceID: 2100}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 2478}
     - Class: 114
-      Script: {instanceID: 3004}
+      Script: {instanceID: 2626}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 3464}
+      Script: {instanceID: 3006}
     - Class: 114
-      Script: {instanceID: 4098}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 4300}
+      Script: {instanceID: 3466}
     - Class: 114
-      Script: {instanceID: 4506}
+      Script: {instanceID: 4100}
+    - Class: 114
+      Script: {instanceID: 4256}
+    - Class: 114
+      Script: {instanceID: 4302}
+    - Class: 114
+      Script: {instanceID: 4508}
+    - Class: 114
+      Script: {instanceID: 4588}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -706,7 +758,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: e39badd617cf46c48d3328a1bfe0a31f
+      Hash: bae82b983d3742a1d7ac063ca1462321
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: general
@@ -754,6 +806,8 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   platform: 19
   scenePathNames:
-  - Assets/Scenes/Game.unity
   - Assets/Scenes/Inicio.unity
-  playerPath: /home/miguel/Escritorio/SpaceMissionWindows/prueba 2d.exe
+  - Assets/Scenes/Game.unity
+  - Assets/Scenes/Ajustes.unity
+  playerPath: /home/miguel/Documentos/Programas/Unity/Space Mission/Builds/0.2.2/Windows/SpaceMission/Space
+    Mission.exe
