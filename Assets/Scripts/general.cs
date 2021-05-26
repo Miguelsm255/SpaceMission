@@ -11,6 +11,10 @@ public class general : MonoBehaviour
         SceneManager.LoadScene(nombreEscena);
     }
 
+//----------------------------------------------------------------------------------------------------------
+
+public Text version;
+
 //---------------------------------------------------------------------------------------------------------
 
     public Text puntuacion;
@@ -24,7 +28,10 @@ public class general : MonoBehaviour
     public GameObject gameover;
     void Start()
     {
+        version.text = "Version: " + Application.version;
         gameover.SetActive(false);
     }
+
+//-----------------------------------------------------------------------------------------------------------
 
 }
