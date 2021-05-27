@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class scr_bala : MonoBehaviour
 {
-    float velocidad = 10;
+    public float velocidad = 10;
 
 //---------------------------------------------------------------------------------------------
 
@@ -27,7 +27,9 @@ public class scr_bala : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.name == "meteorito(Clone)")
+        bool golpeado = GameObject.Find("meteorito(Clone)").GetComponent<Animator>().GetBool("golpeado");
+        
+        if (golpeado == false && col.gameObject.name == "meteorito(Clone)")
         {
             Destroy(gameObject);
         }

@@ -5,31 +5,63 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class general : MonoBehaviour
-{
-    public void ChangeScene(string nombreEscena)
+{    
+    string escena;
+
+    void Awake()
     {
-        SceneManager.LoadScene(nombreEscena);
+        Scene scene = SceneManager.GetActiveScene();
+        escena = scene.name;
     }
 
 //----------------------------------------------------------------------------------------------------------
-
-public Text version;
-
-//---------------------------------------------------------------------------------------------------------
 
     public Text puntuacion;
 
     void Update()
     {
-        puntuacion.text = GameObject.Find("nave").GetComponent<scr_nave>().puntos.ToString("");
+        if (escena == "Game")
+        {
+            if (GameObject.Find("nave"))
+            {
+                puntuacion.text = GameObject.Find("nave").GetComponent<scr_nave>().puntos.ToString("");
+            }
+        }
+
+        if (escena == "Ajustes")
+        {
+            
+        }
+
+        if (escena == "Inicio")
+        {
+
+        }
     }
 
 //-------------------------------------------------------------------------------------------------------
+    
     public GameObject gameover;
+    public Text version;
+
     void Start()
     {
-        version.text = "Version: " + Application.version;
-        gameover.SetActive(false);
+        
+        if (escena == "Game")
+        {
+            gameover.SetActive(false);
+        }
+
+        if (escena == "Ajustes")
+        {
+            version.text = "Version: " + Application.version;
+        }
+
+        if (escena == "Inicio")
+        {
+            
+        }
+        
     }
 
 //-----------------------------------------------------------------------------------------------------------
@@ -38,4 +70,10 @@ public Text version;
     {
         Application.Quit();
     }
+
+    public void ChangeScene(string nombreEscena)
+    {
+        SceneManager.LoadScene(nombreEscena);
+    }
+
 }

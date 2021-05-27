@@ -16,6 +16,7 @@ public class scr_nave : MonoBehaviour
     void Start()
     {
         transform.position = new Vector3(0,-4,0);
+        gameObject.SetActive(true);
     }
 
 //------------------------------------------------------------------------------------------------
@@ -50,7 +51,7 @@ public class scr_nave : MonoBehaviour
     {
         if (col.gameObject.name == "meteorito(Clone)")
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             gameover.SetActive(true);
         }
     }
