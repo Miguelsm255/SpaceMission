@@ -66,6 +66,8 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1514}
+    - Class: 114
       Script: {instanceID: 1790}
     - Class: 114
       Script: {instanceID: 2108}
@@ -77,6 +79,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2796}
     - Class: 114
       Script: {instanceID: 3006}
+    - Class: 114
+      Script: {instanceID: 3108}
     - Class: 114
       Script: {instanceID: 4508}
     - Class: 115
@@ -560,7 +564,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 75189cea715e5359d56da37906e0e19d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: scr_bala
@@ -758,7 +762,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: bae82b983d3742a1d7ac063ca1462321
+      Hash: 90f2fe8ef05b7ea26807f73eaf40fadb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: general
@@ -809,5 +813,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Inicio.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Ajustes.unity
-  playerPath: /home/miguel/Documentos/Programas/Unity/Space Mission/Builds/0.2.2/Windows/SpaceMission/Space
-    Mission.exe
+  playerPath: /home/miguel/Documentos/Programas/Unity/Space Mission/Builds/Windows/0.2.4/Space
+    Mission/Space Mission.exe
