@@ -7,16 +7,18 @@ public class scr_nave : MonoBehaviour
 
     public GameObject bala;
     public int puntos = 0;
+    public int recordPuntos;
     float velocidad = 2500f;
     float disparar = 0;
 
 //-----------------------------------------------------------------------------------------------
 
-    // Start is called before the first frame update
+
     void Start()
     {
         transform.position = new Vector3(0,-4,0);
         gameObject.SetActive(true);
+        PlayerPrefs.GetInt("recordPuntos", 0);
     }
 
 //------------------------------------------------------------------------------------------------
@@ -46,13 +48,16 @@ public class scr_nave : MonoBehaviour
         }
     }
 
+
     public GameObject gameover;
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.name == "meteorito(Clone)")
         {
             gameObject.SetActive(false);
             gameover.SetActive(true);
+            PlayerPrefs.SetInt("recordPuntos", puntos);
         }
     }
 }

@@ -27,11 +27,15 @@ public class scr_bala : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        bool golpeado = GameObject.Find("meteorito(Clone)").GetComponent<Animator>().GetBool("golpeado");
-        
-        if (golpeado == false && col.gameObject.name == "meteorito(Clone)")
+        if (GameObject.Find("meteorito(Clone)"))
         {
-            Destroy(gameObject);
+            bool golpeado = GameObject.Find("meteorito(Clone)").GetComponent<Animator>().GetBool("golpeado");
+        
+            if (golpeado == false && col.gameObject.name == "meteorito(Clone)")
+            {
+                Destroy(gameObject);
+            }
         }
+        
     }
 }
