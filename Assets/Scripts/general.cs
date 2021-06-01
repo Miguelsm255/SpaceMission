@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class general : MonoBehaviour
 {    
     public string escena;
+    public int puntosEnNave;
+    public int recordPuntosEnNave;
 
     void Awake()
     {
@@ -26,17 +28,12 @@ public class general : MonoBehaviour
         {
             if (GameObject.Find("nave"))
             {
-                puntuacion.text = GameObject.Find("nave").GetComponent<scr_nave>().puntos.ToString("");
+                puntuacion.text = puntosEnNave.ToString("");
             }
-
-            if (gameover.activeSelf == true && (GameObject.Find("nave").GetComponent<scr_nave>().puntos > GameObject.Find("nave").GetComponent<scr_nave>().recordPuntos))
+            else
             {
-                recordPuntos.text = "Record : " + GameObject.Find("nave").GetComponent<scr_nave>().puntos.ToString();
-            }else
-            {
-                recordPuntos.text = "Record : " + GameObject.Find("nave").GetComponent<scr_nave>().recordPuntos.ToString();
+                recordPuntos.text = "Record : " + recordPuntosEnNave.ToString();
             }
-
         }
 
         if (escena == "Ajustes")
@@ -85,6 +82,11 @@ public class general : MonoBehaviour
     public void ChangeScene(string nombreEscena)
     {
         SceneManager.LoadScene(nombreEscena);
+    }
+
+    public void BorrarDatos()
+    {
+        PlayerPrefs.DeleteAll();
     }
 
 }
