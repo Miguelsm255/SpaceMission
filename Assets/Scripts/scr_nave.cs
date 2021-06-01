@@ -29,6 +29,13 @@ public class scr_nave : MonoBehaviour
         GameObject.Find("scripter").GetComponent<general>().puntosEnNave = puntos;
         GameObject.Find("scripter").GetComponent<general>().recordPuntosEnNave = recordPuntos;
 
+        Debug.Log(puntos + " " + recordPuntos);
+
+        if (puntos > recordPuntos)
+            {
+                recordPuntos = puntos;
+            }
+
         disparar -= Time.deltaTime;
 
         if (Input.GetKey(KeyCode.D))
@@ -58,12 +65,8 @@ public class scr_nave : MonoBehaviour
     {
         if (col.gameObject.name == "meteorito(Clone)")
         {
-            if (puntos > recordPuntos)
-            {
-                recordPuntos = puntos;
-                PlayerPrefs.SetInt("recordPuntos", recordPuntos);
-            }
-            
+            PlayerPrefs.SetInt("recordPuntos", recordPuntos);
+
             gameObject.SetActive(false);
             gameover.SetActive(true);
         }

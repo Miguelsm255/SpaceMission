@@ -24,11 +24,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.TextMeshPro.dll:
-    - TMPro.TMP_FontAsset
-    - TMPro.TMP_Settings
-    - TMPro.TMP_SpriteAsset
-    - TMPro.TMP_StyleSheet
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -66,23 +61,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1514}
+      Script: {instanceID: 1534}
     - Class: 114
-      Script: {instanceID: 1790}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 2108}
+      Script: {instanceID: 2230}
     - Class: 114
-      Script: {instanceID: 2478}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 2806}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 3020}
     - Class: 114
-      Script: {instanceID: 3006}
+      Script: {instanceID: 3262}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 4508}
+      Script: {instanceID: 4986}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -131,31 +126,31 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1514}
+      Script: {instanceID: 1534}
     - Class: 114
-      Script: {instanceID: 1790}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 2108}
+      Script: {instanceID: 2230}
     - Class: 114
-      Script: {instanceID: 2478}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 2806}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 3020}
     - Class: 114
-      Script: {instanceID: 3006}
+      Script: {instanceID: 3262}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 3406}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 3784}
     - Class: 114
-      Script: {instanceID: 4100}
+      Script: {instanceID: 4514}
     - Class: 114
-      Script: {instanceID: 4302}
+      Script: {instanceID: 4762}
     - Class: 114
-      Script: {instanceID: 4508}
+      Script: {instanceID: 4986}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -187,8 +182,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
     - Class: 58
@@ -206,37 +199,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1514}
+      Script: {instanceID: 1534}
     - Class: 114
-      Script: {instanceID: 1784}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 1790}
+      Script: {instanceID: 2230}
     - Class: 114
-      Script: {instanceID: 2100}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2108}
+      Script: {instanceID: 2806}
     - Class: 114
-      Script: {instanceID: 2478}
+      Script: {instanceID: 3020}
     - Class: 114
-      Script: {instanceID: 2626}
+      Script: {instanceID: 3262}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 3006}
+      Script: {instanceID: 3784}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 4514}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 4762}
     - Class: 114
-      Script: {instanceID: 4100}
-    - Class: 114
-      Script: {instanceID: 4256}
-    - Class: 114
-      Script: {instanceID: 4302}
-    - Class: 114
-      Script: {instanceID: 4508}
-    - Class: 114
-      Script: {instanceID: 4588}
+      Script: {instanceID: 4986}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -738,7 +723,7 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
-      Hash: bcce185182e7ace5da4f74a33ebc92f1
+      Hash: 264bd20beb7efb8476c0974a9b64aeb1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: scr_nave
@@ -762,7 +747,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 90f2fe8ef05b7ea26807f73eaf40fadb
+      Hash: e65e0d921780287204a358de1f07ae89
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: general
@@ -813,5 +798,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Inicio.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Ajustes.unity
-  playerPath: /home/miguel/Documentos/Programas/Unity/Space Mission/Builds/Windows/0.2.4/Space
-    Mission/Space Mission.exe
+  playerPath: /home/miguel/Documentos/Programas/Unity/Space Mission/Builds/Windows/0.3.1/Space
+    Mission.exe
