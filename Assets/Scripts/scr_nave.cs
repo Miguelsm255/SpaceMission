@@ -6,10 +6,11 @@ public class scr_nave : MonoBehaviour
 {
 
     public GameObject bala;
+    public GameObject disparo;
     public int puntos = 0;
     public int recordPuntos;
     float velocidad = 2500f;
-    float disparar = 0;
+    float disparar = 0f;
 
 //-----------------------------------------------------------------------------------------------
 
@@ -28,8 +29,6 @@ public class scr_nave : MonoBehaviour
     {
         GameObject.Find("scripter").GetComponent<general>().puntosEnNave = puntos;
         GameObject.Find("scripter").GetComponent<general>().recordPuntosEnNave = recordPuntos;
-
-        Debug.Log(puntos + " " + recordPuntos);
 
         if (puntos > recordPuntos)
             {
@@ -50,8 +49,9 @@ public class scr_nave : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-velocidad * Time.deltaTime, 0));
         }
 
-        if (disparar <= 0.5 && Input.GetKey(KeyCode.Space))
+        if (disparar <= 0.5f && Input.GetKey(KeyCode.Space))
         {
+            Instantiate(disparo);
             Quaternion rotacion = new Quaternion();    
             Instantiate(bala, new Vector3(transform.position.x + 0.025f,transform.position.y + 0.3f, transform.position.z + 1), rotacion);
             disparar = 1;

@@ -1178,7 +1178,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27b7f9a5736f6c42ba7c40139a6756eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escena: 
+  puntosEnNave: 0
+  recordPuntosEnNave: 0
   puntuacion: {fileID: 0}
+  recordPuntos: {fileID: 0}
   gameover: {fileID: 0}
   version: {fileID: 0}
 --- !u!4 &1395824535

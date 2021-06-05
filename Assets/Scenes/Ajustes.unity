@@ -1214,6 +1214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530610016}
   - component: {fileID: 1530610015}
+  - component: {fileID: 1530610017}
   m_Layer: 0
   m_Name: scripter
   m_TagString: Untagged
@@ -1254,6 +1255,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1530610017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530610014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29ed8594ff1e23dd8908f0bfeefc1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido: {fileID: 2809792963914955880, guid: 00f236e78c0bf540f9ef6c55cd99fdbd, type: 3}
+  duracion: 42.7
+  efectoSonoro: 0
 --- !u!1 &1680536183
 GameObject:
   m_ObjectHideFlags: 0

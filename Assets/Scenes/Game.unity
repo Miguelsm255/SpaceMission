@@ -835,6 +835,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094513454}
   m_CullTransparentMesh: 1
+--- !u!1 &1116694927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2608881139268821714, guid: f91352ef2b0679506804f167b09165ce, type: 3}
+  m_PrefabInstance: {fileID: 2608881138530874186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1116694928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116694927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29ed8594ff1e23dd8908f0bfeefc1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido: {fileID: 759197920845684084, guid: e756042036359c4f5b5b1dd2afa1b2f4, type: 3}
+  sonando: {fileID: 0}
+  duracion: 0.3
+  efectoSonoro: 1
 --- !u!1 &1179429795
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,6 +948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   escena: 
+  puntosEnNave: 0
+  recordPuntosEnNave: 0
   puntuacion: {fileID: 1849228142}
   recordPuntos: {fileID: 1094513456}
   gameover: {fileID: 1653035869}
@@ -1946,6 +1969,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2608881139268821715, guid: f91352ef2b0679506804f167b09165ce, type: 3}
+      propertyPath: disparo
+      value: 
+      objectReference: {fileID: 759197920845684084, guid: e756042036359c4f5b5b1dd2afa1b2f4, type: 3}
     - target: {fileID: 2608881139268821715, guid: f91352ef2b0679506804f167b09165ce, type: 3}
       propertyPath: gameover
       value: 
