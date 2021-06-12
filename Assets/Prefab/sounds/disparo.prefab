@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1419751869785436299}
   - component: {fileID: 7545791456674298439}
   - component: {fileID: 2823886665196787730}
+  - component: {fileID: -3570533946908179333}
   m_Layer: 0
   m_Name: disparo
   m_TagString: Untagged
@@ -141,3 +142,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contador: 0.3
+--- !u!114 &-3570533946908179333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759197920845684084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29ed8594ff1e23dd8908f0bfeefc1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido: {fileID: 759197920845684084}
+  duracion: 0.3
+  efectoSonoro: 1
