@@ -21,6 +21,8 @@ public class general : MonoBehaviour
     public Text puntuacion;
     public Text recordPuntos;
     public GameObject gameover;
+    public GameObject confirmacion;
+    public string nombreBoton;
 
     void Update()
     {
@@ -63,6 +65,7 @@ public class general : MonoBehaviour
         if (escena == "Ajustes")
         {
             version.text = "Version: " + Application.version;
+            confirmacion.SetActive(false);
         }
 
         if (escena == "Inicio")
@@ -89,4 +92,30 @@ public class general : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
 
+//--------------------------------------------------------------------------------------------------
+
+    public void NombreBoton(string boton)
+    {
+        nombreBoton = boton;
+    }
+
+    public void BotonPulsado()
+    {
+        confirmacion.SetActive(true); 
+    }
+
+    public void BotonSi()
+    {
+        if (nombreBoton == "borrarDatos")
+        {
+            BorrarDatos();
+        }
+
+        confirmacion.SetActive(false);
+    }
+
+    public void BotonNo()
+    {
+        confirmacion.SetActive(false);
+    }
 }
