@@ -21,8 +21,6 @@ public class general : MonoBehaviour
     public Text puntuacion;
     public Text recordPuntos;
     public GameObject gameover;
-    public GameObject confirmacion;
-    public string nombreBoton;
 
     void Update()
     {
@@ -94,19 +92,20 @@ public class general : MonoBehaviour
 
 //--------------------------------------------------------------------------------------------------
 
-    public void NombreBoton(string boton)
+    public GameObject confirmacion;
+    public string nombreBoton;
+    public Text accion;
+
+    public void BotonPulsado(string boton)
     {
         nombreBoton = boton;
-    }
-
-    public void BotonPulsado()
-    {
-        confirmacion.SetActive(true); 
+        confirmacion.SetActive(true);
+        accion.text = "¿Seguro que quieres " + nombreBoton + "?";
     }
 
     public void BotonSi()
     {
-        if (nombreBoton == "borrarDatos")
+        if (nombreBoton == "borrar datos")
         {
             BorrarDatos();
         }
