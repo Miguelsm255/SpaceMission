@@ -63,6 +63,7 @@ public class general : MonoBehaviour
         if (escena == "Ajustes")
         {
             version.text = "Version: " + Application.version;
+            confirmacion.SetActive(false);
         }
 
         if (escena == "Inicio")
@@ -89,4 +90,31 @@ public class general : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
 
+//--------------------------------------------------------------------------------------------------
+
+    public GameObject confirmacion;
+    public string nombreBoton;
+    public Text accion;
+
+    public void BotonPulsado(string boton)
+    {
+        nombreBoton = boton;
+        confirmacion.SetActive(true);
+        accion.text = "¿Seguro que quieres " + nombreBoton + "?";
+    }
+
+    public void BotonSi()
+    {
+        if (nombreBoton == "borrar datos")
+        {
+            BorrarDatos();
+        }
+
+        confirmacion.SetActive(false);
+    }
+
+    public void BotonNo()
+    {
+        confirmacion.SetActive(false);
+    }
 }
