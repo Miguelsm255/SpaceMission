@@ -44,6 +44,7 @@
      <Compile Include="Assets\Scripts\scr_meteorito.cs" />
      <Compile Include="Assets\Scripts\scr_nave.cs" />
      <Compile Include="Assets\Scripts\general.cs" />
+     <Compile Include="Assets\Scripts\scr_extremos.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/miguel/Unity/Hub/Editor/2020.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
