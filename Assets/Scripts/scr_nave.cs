@@ -6,18 +6,18 @@ public class scr_nave : MonoBehaviour
 {
 
     public GameObject bala;
-    public GameObject disparo;
+    public GameObject sonidoDisparo;
     public int puntos = 0;
     public int recordPuntos;
     float velocidad = 2500f;
-    float disparar = 0f;
+    float delayDisparar = 0f;
 
 //-----------------------------------------------------------------------------------------------
 
 
     void Start()
     {
-        transform.position = new Vector3(0,-4,0);
+        transform.position = new Vector3(0,-3,0);
         gameObject.SetActive(true);
         recordPuntos = PlayerPrefs.GetInt("recordPuntos", 0);
     }
@@ -35,26 +35,21 @@ public class scr_nave : MonoBehaviour
                 recordPuntos = puntos;
             }
 
-        disparar -= Time.deltaTime;
+        delayDisparar -= Time.deltaTime;
 
         if (Input.GetKey(KeyCode.D))
         {
-            //transform.Translate(velocidad * Time.deltaTime,0,0);
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(velocidad * Time.deltaTime, 0));
+            derecha();
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            //transform.Translate(-velocidad * Time.deltaTime,0,0);
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-velocidad * Time.deltaTime, 0));
+            izquierda();
         }
 
-        if (disparar <= 0.5f && Input.GetKey(KeyCode.Space))
+        if (delayDisparar <= 0.5f && Input.GetKey(KeyCode.Space))
         {
-            Instantiate(disparo);
-            Quaternion rotacion = new Quaternion();    
-            Instantiate(bala, new Vector3(transform.position.x + 0.025f,transform.position.y + 0.3f, transform.position.z + 1), rotacion);
-            disparar = 1;
+            disparo();
         }
     }
 
@@ -70,5 +65,25 @@ public class scr_nave : MonoBehaviour
             gameObject.SetActive(false);
             gameover.SetActive(true);
         }
+    }
+
+    public void izquierda()
+    {
+        //transform.Translate(-velocidad * Time.deltaTime,0,0);
+        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-velocidad * Time.deltaTime, 0));
+    }
+
+    public void derecha()
+    {
+        //transform.Translate(velocidad * Time.deltaTime,0,0);
+        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(velocidad * Time.deltaTime, 0));
+    }
+
+    public void disparo()
+    {
+        Instantiate(sonidoDisparo);
+        Quaternion rotacion = new Quaternion();    
+        Instantiate(bala, new Vector3(transform.position.x + 0.025f,transform.position.y + 0.3f, transform.position.z + 1), rotacion);
+        delayDisparar = 1;
     }
 }
